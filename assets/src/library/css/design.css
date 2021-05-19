@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Cedarville Cursive';
+	src: url(https://Ketul.test/wp-content/themes/Design-fly/fonts/Cederville-cursive/CedarvilleCursive-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Open sans';
+	src: url(https://Ketul.test/wp-content/themes/Design-fly/fonts/Open-Sans/OpenSans-Bold.ttf);
+}
+
+.df-nav {
+	flex-direction: row;
+	margin-left: 45%;
+}
+
+.nav-container-df {
+	position: relative;
+	height: 105px;
+	box-shadow: 5px;
+	background-color: #F5F5F5;
+}
+
+.df-nav .menu-item{
+	font-family: "Open sans";
+	font-size: 14px;
+	/*color: #222222;*/
+	color: red;
+	margin: 8px;
+	margin-top: 30px;
+}
+
+.df-nav .menu-item a{
+	color: #222222;
+}
+
+.df-nav .menu-item a:hover, a:focus {
+	background-color: #ef4634;
+	/*background-color: yellow;*/
+	text-decoration: none;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.df-nav li.active > a {
+	background-color: #ef4634;
+	text-decoration: none;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.navbar-df {
+	text-align: center;
+}
+
+.df-logo {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.search {
+	position: absolute;
+	margin-left: 1015px;
+	margin-top: -38px;
+}
+.search input[type=text]{
+	width:150px;
+	height:20px;
+	border-radius:3px;
+	border: 1px solid #62585f;
+}
+
+.search button {
+	float: right;
+	border: none;
+}
