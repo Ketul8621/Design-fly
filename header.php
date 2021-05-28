@@ -41,7 +41,6 @@ if ( function_exists( 'wp_body_open' ) ) {
 							'theme_location' => 'Header_menu',
 							'container'      => false,
 							'menu_class'     => 'nav navbar-nav df-nav',
-							'walker'         => new Walker_Nav_Primary(),
 						)
 						);
 					?>
@@ -76,4 +75,38 @@ if ( function_exists( 'wp_body_open' ) ) {
 				</div>
 			<?php endif; ?>
 		</header>
+
+		<div class="row feature-section">
+			<div class="col-2 offset-2 feature">
+				<div class="ad">
+					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/ad-icon.png'; ?>" alt="">
+				</div>
+				<div class="feature-text">
+					<a href="#">Advertisement</a>
+					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
+				</div>
+			</div>
+
+			<div class="col-2 feature-multi multi">
+				<div class="ad">
+					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/multimedia-icon.png'; ?>" alt="">
+				</div>
+				<div class="feature-text">
+					<a href="#">Multimedia</a>
+					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
+				</div>
+			</div>
+
+			<div class="col-2 feature-multi phtograph">
+				<div class="ad">
+					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/photography-icon.png'; ?>" alt="">
+				</div>
+				<div class="feature-text">
+					<a href="#">Photography</a>
+					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<?php
