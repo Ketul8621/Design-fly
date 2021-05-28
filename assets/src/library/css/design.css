@@ -4,8 +4,18 @@
 }
 
 @font-face {
-	font-family: 'Open sans';
+	font-family: 'Open sans bold';
 	src: url(https://Ketul.test/wp-content/themes/Design-fly/fonts/Open-Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Open sans semi-bold';
+	src: url(https://Ketul.test/wp-content/themes/Design-fly/fonts/Open-Sans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'Open sans Regular';
+	src: url(https://Ketul.test/wp-content/themes/Design-fly/fonts/Open-Sans/OpenSans-Regular.ttf);
 }
 
 .df-nav {
@@ -17,11 +27,11 @@
 	position: relative;
 	height: 105px;
 	box-shadow: 5px;
-	background-color: #F5F5F5;
+	background-color: #f5f5f5;
 }
 
 .df-nav .menu-item{
-	font-family: "Open sans";
+	font-family: "Open sans bold";
 	font-size: 14px;
 	/*color: #222222;*/
 	color: red;
@@ -33,7 +43,7 @@
 	color: #222222;
 }
 
-.df-nav .menu-item a:hover, a:focus {
+.df-nav .menu-item a:hover, .df-nav .menu-item a:focus {
 	background-color: #ef4634;
 	/*background-color: yellow;*/
 	text-decoration: none;
@@ -77,4 +87,207 @@
 .search button {
 	float: right;
 	border: none;
+}
+
+.df-carousal img {
+	height: 544px;
+}
+
+.df-heading {
+	font-family: "Open sans bold";
+	font-size: 70px;
+	text-shadow: 2px 2px 2px #950904;
+	color: #ffffff;
+}
+
+.df-one-liner {
+	font-family: "Open sans semi-bold";
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 24px;
+	width: 650px;
+	margin-left: 15%;
+}
+
+.df {
+	/*width: 100%;*/
+	background-color: #e73d2d;
+	/*background-color: blue;*/
+}
+
+.df img {
+	margin: auto;
+	/*border-left: none;*/
+}
+
+.w-100 {
+    width: 622px!important;
+}
+
+.feature-section {
+	height: 101px;
+	margin-top: 3px;
+	background-color: #f5f5f5;
+}
+
+.feature {
+	display: flex;
+	width: 22.17%;
+	flex: 0 0 22.17%;
+	max-width: 22.17%;
+	/*padding-right: 15px;*/
+	padding-left: 0;
+	/*background-color: yellow;*/
+	/*border: 1px solid red;*/
+}
+
+.feature-multi {
+	display: flex;
+	width: 23.5%;
+	flex: 0 0 23.5%;
+	max-width: 23.5%;
+	padding-right: 15px;
+	padding-left: 0;
+	/*background-color: yellow;*/
+	/*border: 1px solid red;*/
+}
+
+.ad {
+	display: flex;
+	height: 101px;
+	/*width: 52px;*/
+	/*justify-content: center;*/
+	align-items: center;
+	/*background-color: violet;*/
+}
+
+.ad img {
+	width: 50px;
+	height: 50px;
+}
+
+.feature-text {
+	/*background-color: violet;*/
+	margin-left: 12px;
+	margin-top: 12px;
+	/*background-color: violet;*/
+	/*align-items: flex-start;*/
+}
+
+.feature-text a {
+	font-family: 'Open sans bold';
+	font-size: 20px;
+	color: #ef4634;
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+.feature-text a:hover {
+	color: #222222;
+	text-decoration: none;
+}
+
+.feature-text p {
+	font-family: 'Open sans Regular';
+	font-size: 13px;
+	color: #333333;
+	line-height: 19.5px;
+	margin-top: 1.5px;
+}
+
+.multi, .phtograph {
+	padding-left: 9px;
+}
+
+.line {
+	border-bottom: 1px solid #62585f;
+	width: 68%;
+	margin: auto;
+}
+
+.footer-row {
+	margin-top: 38px;
+	/*background-color: red;*/
+}
+
+.footer-col, .footer-col-1 {
+	/*display: flex;*/
+	width: 35%;
+	max-width: 35%;
+	flex: 0 0 35%;
+	/*background-color: aqua;*/
+}
+
+.footer-col, .footer-col-1 {
+	padding-left: 5px;
+	padding-right: 10px;
+}
+.footer-1-title, .contact-title {
+	font-family: 'Open sans Regular';
+	font-size: 25px;
+	color: #62585f;
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+.footer-col .textwidget p, .footer-col-1 .textwidget p {
+	font-family: 'Open sans Regular';
+	font-size: 14px;
+	color:#62585f;
+	line-height: 21px;
+}
+
+.footer-col-1 .textwidget p {
+	margin-bottom: 0;
+}
+
+#menu-social-icons {
+ 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#menu-social-icons li {
+	float: left;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+.facebook a {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/facebook-icon.png);
+}
+
+.google a {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/google-icon.png);
+}
+
+.linkedin a {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/linkedin-icon.png);
+}
+
+.p-interest a {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/p-interest-icon.png);
+}
+
+.tweet a {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/twitter-icon.png);
+}
+
+.facebook a:hover {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/facebook-hover-icon.png);
+}
+
+.google a:hover {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/google-hover-icon.png);
+}
+
+.linkedin a:hover {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/linkedin-hover-icon.png);
+}
+
+.p-interest a:hover {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/p-interest-hover-icon.png);
+}
+
+.tweet a:hover {
+	content: url(https://ketul.test/wp-content/themes/Design-fly/assets/src/library/images/home/twitter-hover-icon.png);
 }
