@@ -9,6 +9,11 @@ require get_template_directory() . '/template-parts/enqueue.php';
 require get_template_directory() . '/template-parts/theme-support.php';
 require get_template_directory() . '/include/walker.php';
 require get_template_directory() . '/template-parts/footbar-widgets.php';
+require get_template_directory() . '/include/photograph.php';
+require get_template_directory() . '/include/multimedia.php';
+require get_template_directory() . '/include/adver.php';
+
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Add active class to the current menu item
@@ -41,23 +46,24 @@ function df_my_widget() {
 
 add_action( 'widgets_init', 'df_my_widget' );
 
-function universalSearch() {
-	register_sidebar( array(
-		'name'          => 'Footer 1',
-		'id'            => 'universal-search-field',
-		'before_widget' => '<div class="chw-widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<div class="footer-1-title">',
-		'after_title'   => '</div>',
-	) );
+function get_post_block_galleries_images( $post_id ) {
+    $content = get_post_field( 'post_content', $post_id );
+    $srcs = [];
 
-		//register_sidebar( array(
-		//	'name'          => 'Universal Search1',
-		//	'id'            => 'universal-search-field-1',
-		//	'before_widget' => '<div class="chw-newsletter">',
-		//	'after_widget'  => '</div>',
-		//	'before_title'  => '<h2 class="chw-newsletter_title">',
-		//	'after_title'   => '</h2>',
-		//) );
+    $i = -1;
+    foreach ( parse_blocks( $content ) as $block ) {
+        if ( 'core/gallery' === $block['blockName'] ) {
+            $i++;
+            $srcs[ $i ] = [];
+
+            preg_match_all( '#src=([\'"])(.+?)\1#is', $block['innerHTML'], $src, PREG_SET_ORDER );
+            if ( ! empty( $src ) ) {
+                foreach ( $src as $s ) {
+                    $srcs[ $i ][] = $s[2];
+                }
+            }
+        }
+    }
+
+    return $srcs;
 }
-add_action( 'widgets_init', 'universalSearch' );
