@@ -17,6 +17,10 @@
 				dynamic_sidebar( 'universal-search-field' );
 			endif;
 			?>
+
+			<div class="about">
+				<a href="">Read more</a>
+			</div>
 		</div>
 
 		<div class="col-4 footer-col-1">
@@ -28,10 +32,15 @@
 		</div>
 	</div>
 
-	<!--<div>displaying...</div>-->
+	<div class="line"></div>
+
+	<div class="copy-right">
+		c 2012 - Designfly | Designed by <a href="">rt-camp</a>
+	</div>
+
 </footer>
 
 <?php wp_footer(); ?>
-<!--</div>-->
+
 </body>
 </html>
