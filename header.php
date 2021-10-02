@@ -30,19 +30,21 @@ if ( function_exists( 'wp_body_open' ) ) {
 			<div class="nav-container nav-container-df">
 				<div class="df-logo">
 					<?php
-						if ( function_exists( 'the_custom_logo' ) ) {
-							the_custom_logo();
-						}
+					if ( function_exists( 'the_custom_logo' ) ) {
+						the_custom_logo();
+					}
 					?>
 				</div>
+
 				<nav class="navbar navbar-default navbar-df">
 					<?php
-						wp_nav_menu( array(
+					wp_nav_menu(
+						array(
 							'theme_location' => 'Header_menu',
 							'container'      => false,
 							'menu_class'     => 'nav navbar-nav df-nav',
 						)
-						);
+					);
 					?>
 				</nav>
 
@@ -53,11 +55,12 @@ if ( function_exists( 'wp_body_open' ) ) {
 					</form>
 				</div>
 			</div>
-			<?php if ( is_home() ): ?>
+			<?php if ( is_home() ) : ?>
 				<div id="carousel1" class="carousel carousel-dark slide df-carousal" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active df" data-bs-interval="10000">
 							<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/slider-image.png'; ?>" class="d-block w-100" alt="...">
+
 							<div class="carousel-caption d-none d-md-block">
 								<p class="df-heading">Gearing up the ideas</p>
 								<p class="df-one-liner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -81,8 +84,9 @@ if ( function_exists( 'wp_body_open' ) ) {
 				<div class="ad">
 					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/ad-icon.png'; ?>" alt="">
 				</div>
+
 				<div class="feature-text">
-					<a href="#">Advertisement</a>
+					<a class="adver-area" href="https://ketul.test/?page_id=126&advertisement_id=11">Advertisement</a>
 					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
 				</div>
 			</div>
@@ -91,8 +95,9 @@ if ( function_exists( 'wp_body_open' ) ) {
 				<div class="ad">
 					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/multimedia-icon.png'; ?>" alt="">
 				</div>
+
 				<div class="feature-text">
-					<a href="#">Multimedia</a>
+					<a href="https://ketul.test/?page_id=126&multimedia_id=12">Multimedia</a>
 					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
 				</div>
 			</div>
@@ -101,12 +106,14 @@ if ( function_exists( 'wp_body_open' ) ) {
 				<div class="ad">
 					<img src="<?php echo get_template_directory_uri() . '/assets/src/library/images/home/photography-icon.png'; ?>" alt="">
 				</div>
+
 				<div class="feature-text">
-					<a href="#">Photography</a>
+					<a href="https://ketul.test/?page_id=126&photography_id=13">Photography</a>
 					<p>Neque porro quisquam est, dolorem ipsum quia dolor sit amet</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<?php
