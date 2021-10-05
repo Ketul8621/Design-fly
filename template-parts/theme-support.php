@@ -40,3 +40,6 @@ add_action( 'after_setup_theme', 'df_custom_logo_setup' );
 
 // Activate HTML5 features.
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+// Theme support for post thumbnails.
+add_theme_support( 'post-thumbnails' );
