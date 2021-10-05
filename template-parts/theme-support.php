@@ -37,3 +37,6 @@ function df_custom_logo_setup() {
 
 // Register df_custom_logo_setup with after_setup_theme hook.
 add_action( 'after_setup_theme', 'df_custom_logo_setup' );
+
+// Activate HTML5 features.
+add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
