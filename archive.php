@@ -22,23 +22,9 @@ get_header();
 
 			<?php
 
-			//$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-			//echo get_query_var( 'paged' );
-			//echo $paged;
-			//$args = array(
-			//	'post_type' => 'post',
-			//	'paged' => $paged,
-			//);
-
-
-			//$post_query = new WP_Query( $args );
-
 			if ( have_posts() ) :
-
 				while ( have_posts() ) :
 					the_post();
-					//echo get_the_title();
 					get_template_part( 'template-parts/content', 'blog' );
 				endwhile;
 			endif;
