@@ -32,6 +32,24 @@ function df_footbar_widgets() {
 			'after_title'   => '</div>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => 'Sidebar-1',
+			'id'            => 'yohe-1',
+			'before_widget' => '<div class="chw-widget">',
+			'after_widget'  => '</div>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => 'Sidebar-2',
+			'id'            => 'yohe-2',
+			'before_widget' => '<div class="chw-widget">',
+			'after_widget'  => '</div>',
+		)
+	);
 }
 // Register df_footbar_widgets with widgets_init hook.
 add_action( 'widgets_init', 'df_footbar_widgets' );
